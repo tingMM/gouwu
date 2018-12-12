@@ -1,0 +1,71 @@
+/*定义变量*/
+@main-color:#006699;
+*{
+    margin: 0px;
+    padding: 0px;
+}
+li{
+    list-style: none;
+}
+img{
+     /* 解决图标3px的问题 */
+    vertical-align: middle;
+}
+
+
+
+/*头部公共样式*/
+#header{
+    background-color: @main-color;
+    padding-left: .45rem;
+    padding-right: .45rem;
+    display: flex;
+    position: fixed;
+    height: .45rem;
+    color: #fff;
+    z-index: 999;
+    h4{
+        width: 2.85rem;
+        text-align: center;
+        line-height: .45rem;
+        font-weight: normal;
+        margin: 0;
+    }
+    a{
+        width: .45rem;
+        height: .45rem;
+        position: absolute;
+        right: 0;
+        top: 0;
+        text-align: center;
+        line-height: .45rem;
+        color: #fff;
+    }
+}
+
+
+/*底部公共样式*/
+#footer{
+    width: 100vw;
+    height: 0.45rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    background-color: @main-color;
+    ul{
+        display: flex;
+        li{
+            width: 25vw;
+            a{
+                display: block;
+                color: #fff;
+                text-align: center;
+                padding: 0.085rem;
+                span{
+                    display: block;
+                }
+            }
+        }
+    }
+}
